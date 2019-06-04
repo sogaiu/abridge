@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths [
+                "lib"
+                "src"
+               ]
+ ;;
+ :dependencies []
+ ;;
+ :builds
+ {:dev {:target :node-library
+        ;;
+        :compiler-options {:infer-externs :auto}
+        :exports {
+                  :activate abridge.core/activate
+                  :deactivate abridge.core/deactivate
+                 }
+        ;;
+        :output-dir "lib/js"
+        :output-to "lib/main.js"
+        :devtools {:before-load-async abridge.core/before}}}}

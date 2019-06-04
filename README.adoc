@@ -1,0 +1,45 @@
+= Abridge Helper Program and Friends
+
+Because you've seen that long string enough already.
+
+== Rationale
+
+Sufficient docstrings can become long, but long docstrings can adversely affect readability and navigability of code.
+
+What if long strings in your code could be automatically set up for folding?
+
+== Prerequisites
+
+* Some Java (using >= 8 here)
+* https://www.graalvm.org/docs/reference-manual/aot-compilation/#install-native-image[Native Image] (implies appropriate https://github.com/oracle/graal[GraalVM] >= 19)
+* Clojure 1.9 and its clj tool
+* Atom
+
+== Building and Setup
+
+* Clone this repository and cd to the clone
+
+* Ensure native-image is in your PATH -OR- +
+  Set GRAALVM_HOME appropriately (e.g. on Arch Linux this might be /usr/lib/jvm/java-8-graal)
+
+* Build the helper: `clj -A:native-image`.  After some time, this should produce a file named "abridge" in the current directory.
+
+* Examine the atom subdirectory and follow the contained instructions for getting the Atom plugin to work.
+
+== Technical Background
+
+See the https://github.com/sogaiu/adorn[adorn repository].
+
+== Acknowledgments
+
+Thanks to (at least) the following folks:
+
+* borkdude
+* lread
+* mauricioszabo
+* rundis
+* Saikyun
+* seancorfield
+* taylorwood
+* thheller
+* xsc
