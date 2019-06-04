@@ -13,7 +13,7 @@ What if long strings in your code could be automatically set up for folding?
 * Some Java (using >= 8 here)
 * https://www.graalvm.org/docs/reference-manual/aot-compilation/#install-native-image[Native Image] (implies appropriate https://github.com/oracle/graal[GraalVM] >= 19)
 * Clojure 1.9 and its clj tool
-* Atom
+* Atom or VSCode
 
 == Building and Setup
 
@@ -24,7 +24,7 @@ What if long strings in your code could be automatically set up for folding?
 
 * Build the helper: `clj -A:native-image`.  After some time, this should produce a file named "abridge" in the current directory.
 
-* Examine the atom subdirectory and follow the contained instructions for getting the Atom plugin to work.
+* Examine the atom / vscode subdirectory and follow the contained instructions for getting the Atom plugin / VSCode extension to work.
 
 == Technical Background
 

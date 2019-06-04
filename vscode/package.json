@@ -1,0 +1,29 @@
+{
+  "name": "vscode-abridge",
+  "displayName": "vscode-abridge",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "",
+  "license": "",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "categories": [
+    "Clojure"
+  ],
+  "activationEvents": [
+    "onLanguage:clojure"
+  ],
+  "main": "./lib/main",
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.8.29",
+    "source-map-support": "^0.5.9",
+    "vscode": "^1.1.22"
+  },
+  "dependencies": {
+    "diff": "^3.5.0"
+  }
+}
