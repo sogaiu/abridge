@@ -4,7 +4,7 @@
 
 * Abridge command line program built
 * Atom
-* yarn (or npm)
+* npm
 * A sacrificial / backed-up Clojure project directory
 
 == Building
@@ -13,9 +13,9 @@
 
 ----
 # install dependencies
-yarn
+npm install
 # build + watch for changes
-yarn shadow-cljs watch dev
+npx shadow-cljs watch dev
 ----
 
 If all went well, there should now be a fresh file at lib/main.js (the "compiled" plugin).
@@ -24,7 +24,7 @@ If all went well, there should now be a fresh file at lib/main.js (the "compiled
 
 == Starting
 
-* Symlink the directory containing this file under ~/.atom/packages/
+* Symlink the directory containing this file under ~/.atom/packages/.  The symlink may need to be named "abridge".
 
 * Start Atom
 
