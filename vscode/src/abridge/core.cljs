@@ -7,7 +7,7 @@
 (defn abridge-path
   []
   ;; XXX: modify if publisher / name changes in package.json
-  (str (av/extension-path "undefined_publisher.vscode-abridge")
+  (str (av/extension-path "sogaiu.vscode-abridge")
      "/bin/abridge"))
 
 (defn abridge-strings
